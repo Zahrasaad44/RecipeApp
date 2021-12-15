@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="#CFCCCD"
+    android:id="@+id/addRecipeLL">
+
+    <EditText
+        android:id="@+id/titleET"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+       android:hint="Enter the recipe name..." />
+
+    <EditText
+        android:id="@+id/authorET"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName"
+        android:hint="Enter the author..." />
+
+    <EditText
+        android:id="@+id/ingredientsET"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        android:hint="Enter the ingredients... " />
+
+    <EditText
+        android:id="@+id/instructionsET"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:inputType="textMultiLine"
+        android:hint="Enter the instructions..." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#504E4E"
+            android:text="Submit"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#504E4E"
+            android:text="Cancel"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>
